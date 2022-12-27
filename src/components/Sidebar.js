@@ -15,46 +15,46 @@ const Sidebar = (props) => {
 				<span> Get Premium</span>
 			</a>
 
-			<a className="menu-item" href="/about">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Records
 			</a>
 
-			<a className="menu-item" href="/services">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Bank Syncs
 			</a>
 
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				imports
 			</a>
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Receipts
 			</a>
-			<a className="menu-item" href="/services">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Tags
 			</a>
 
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Cards
 			</a>
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Set Budget
 			</a>
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				CVV
 			</a>
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				lists
 			</a>
-			<a className="menu-item" href="/contact">
+			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
 				Settings
 			</a>
