@@ -17,46 +17,46 @@ const Sidebar = (props) => {
 
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Records
+				<span>Records</span>
 			</a>
 
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Bank Syncs
+				<span>Bank Syncs</span>
 			</a>
 
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				imports
+				<span>imports</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Receipts
+				<span>Receipts</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Tags
+				<span>Tags</span>
 			</a>
 
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Cards
+				<span>Cards</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Set Budget
+				<span>Set Budget</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				CVV
+				<span>CVV</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				lists
+				<span>lists</span>
 			</a>
 			<a className="menu-item" href="/">
 				<img src={expense} alt="expense" style={iconsStyles} />
-				Settings
+				<span>Settings</span>
 			</a>
 		</Menu>
 	);
