@@ -1,9 +1,10 @@
 import "./App.css";
+import Nav from "./components/Nav";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>React App Group 5 Project</h1>
+			<Nav />
 		</div>
 	);
 }

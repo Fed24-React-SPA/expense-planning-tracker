@@ -11,6 +11,8 @@
 
 .App {
 	text-align: center;
+	height: 100vh;
+	background-color: var(--dark-blue-bgcolor);
 }
 
 .App-logo {
@@ -38,6 +40,85 @@
 .App-link {
 	color: #61dafb;
 }
+/* Menu styling*/
+
+#page-wrap {
+	text-align: center;
+	overflow: auto;
+	top: 45%;
+	position: relative;
+}
+
+.bm-item {
+	display: inline-block;
+	text-align: left;
+	/* Our sidebar item styling */
+	text-decoration: none;
+	margin: 1.5rem;
+	color: var(--orange-color-primary);
+	transition: color 0.6s;
+	font-weight: 400;
+	transition: all 0.5s ease-in-out;
+}
+
+.bm-item:hover {
+	font-weight: 600;
+	transform: translateX(10px);
+}
+
+.bm-burger-button {
+	position: fixed;
+	width: 2rem;
+	height: 1.75rem;
+	left: 2rem;
+	top: 2rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	/* background: #373a47; */
+	background: var(--white-color);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	background: var(--dark-blue-bgcolor);
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+	color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+}
+.menu-item {
+	width: 100%;
+}
+/* end of Menu Styling */
 
 @keyframes App-logo-spin {
 	from {
