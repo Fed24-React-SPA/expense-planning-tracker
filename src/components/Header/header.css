@@ -1,0 +1,21 @@
+.header{
+  /* Welcome */
+
+position: absolute;
+width: 110px;
+height: 24px;
+left: 140px;
+top: 77px;
+
+font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.015em;
+
+color: rgba(255, 255, 255, 0.87);
+
+}

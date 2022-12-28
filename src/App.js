@@ -1,9 +1,10 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 
-function App() {
+function App () {
 	return (
 		<div className="App">
-			<h1>React App Group 5 Project</h1>
+			<Header />
 		</div>
 	);
 }
