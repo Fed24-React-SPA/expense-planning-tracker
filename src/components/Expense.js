@@ -92,14 +92,13 @@ const Expense = () => {
 				>
 					<option value={"Apparels"}>Apparels</option>
 					<option value={"Electronics"}>Electronics</option>
-					<option value={"Geroceries"}>Geroceries</option>
 					<option value={"Investments"}>Investments</option>
 					<option value={"Life"}>Life</option>
 					<option value={"Transportation"}>Transportation</option>
-					<option value={"ChildCare"}>child Care</option>
+					<option value={"ChildCare"}>Child Care</option>
 					<option value={"UtilityBills"}>Utility Bills</option>
 					<option value={"CellPhone"}>Cell Phone</option>
-					<option value={"Food-Groceries"}>Food and Groceries</option>
+					<option value={"Food-Groceries"}>Food And Groceries</option>
 				</select>
 				<select
 					value={currency}
@@ -108,13 +107,7 @@ const Expense = () => {
 						setCurrency(e.target.value);
 					}}
 				>
-					<option value="USD">USD</option>
-					<option value="IRRIAL">IR-RIAL</option>
-					<option value="EUR">EUR</option>
 					<option value="SEK">SEK</option>
-					<option value="GBP">GBP</option>
-					<option value="JPY">JPY</option>
-					<option value="INR">INR</option>
 				</select>
 				<select
 					value={payment}
@@ -133,7 +126,7 @@ const Expense = () => {
 					datas.map((data, i) => (
 						<div key={i}>
 							<p>
-								{data.name} : ghjv{data.category}
+								{data.name} : {data.category}
 							</p>
 							<p>amount{data.amount}</p>
 							<p>currency {data.currency}</p>
