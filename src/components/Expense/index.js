@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./expense.css";
+import moneyIcon from "../../images/money.png";
 const Expense = () => {
 	const name = useRef();
 	const amount = useRef();
@@ -48,7 +49,9 @@ const Expense = () => {
 				amount: Number(amountVal),
 				currency: currency,
 				category: category,
-				date: new Date().toLocaleString("en-GB").replace(",", ""),
+				date: `${
+					new Date().getFullYear() / new Date().getMonth() / new Date().getDay()
+				}`,
 				payment: payment,
 			},
 		]);
@@ -62,12 +65,12 @@ const Expense = () => {
 	return (
 		<>
 			<div className="expense-container">
-				<p>
+				<h1 className="main-text">
 					Total Expense :
 					{datas.reduce((acc, obj) => {
 						return acc + obj.amount;
 					}, 0)}
-				</p>
+				</h1>
 				<h1>Expense Component</h1>
 
 				<form className="expense-form" onSubmit={submit}>
@@ -121,15 +124,27 @@ const Expense = () => {
 					</select>
 					<button>Submit</button>
 				</form>
-				<div>
+				<div className="transaction-container">
+					<h3>My Transactions</h3>
 					{datas.length > 0 ? (
 						datas.map((data, i) => (
-							<div key={i}>
-								<p>
-									{data.name} : {data.category}
-								</p>
-								<p>amount{data.amount}</p>
-								<p>currency {data.currency}</p>
+							<div className="inner-container" key={i}>
+								<div className="left-div">
+									<div className="left-div-imgcontainer">
+										<img src={moneyIcon} alt="money" />
+									</div>
+
+									<div className="left-div-content">
+										<p>{data.name}</p>
+										<p>{data.date}</p>
+									</div>
+								</div>
+								<div className="right-div">
+									<p>
+										<span>- SEK</span>
+										{data.amount}
+									</p>
+								</div>
 
 								{/* <p>remaining : {income}</p> */}
 							</div>
