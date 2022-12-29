@@ -1,3 +1,10 @@
+Remain parts : 
+1-Add Income function into project 
+2-Implement style part into this branch...
+3-work on other tabs such as expense and income
+
+............
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
