@@ -1,0 +1,34 @@
+.expense-container {
+	color: var(--white-color);
+	padding: var(--padding-big);
+	background: var(--dark-blue-bgcolor);
+	background: linear-gradient(
+		351deg,
+		var(--linear-black),
+		var(--linear-orange)
+	);
+	font-weight: 800;
+}
+.expense-form {
+	width: 40%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding-small);
+}
+.expense-form button {
+	padding: 0.5rem 1rem;
+	background-color: var(--orange-color-primary);
+	color: var(--white-color);
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1rem;
+	font-weight: 900;
+	transition: all 0.65s ease;
+}
+.expense-form button:hover {
+	transform: translateY(4px);
+	letter-spacing: 4px;
+	background-color: greenyellow;
+	color: black;
+}
