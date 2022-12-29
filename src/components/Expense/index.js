@@ -49,9 +49,7 @@ const Expense = () => {
 				amount: Number(amountVal),
 				currency: currency,
 				category: category,
-				date: `${
-					new Date().getFullYear() / new Date().getMonth() / new Date().getDay()
-				}`,
+				date: new Date().toLocaleString("en-GB").replace(",", ""),
 				payment: payment,
 			},
 		]);
