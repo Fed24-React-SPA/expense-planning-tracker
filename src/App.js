@@ -22,7 +22,7 @@ function App() {
     <>
       <BrowserRouter>
         <div style={parentNav}>
-          <Link style={navstyle}> Home </Link>
+          <Link style={navstyle} to={'/'}> Home </Link>
           <Link style={navstyle} to={"/expense"}>
             Expense
           </Link>
