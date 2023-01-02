@@ -9,6 +9,7 @@
 	--light-pink: #fdc1c1;
 }
 
+
 .App {
 	text-align: center;
 	height: 100vh;
@@ -49,3 +50,4 @@
 		transform: rotate(360deg);
 	}
 }
+
