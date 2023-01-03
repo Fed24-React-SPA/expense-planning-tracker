@@ -1,12 +1,6 @@
 import "./App.css";
-import AddButton from "./Components/AddButton/AddButton";
-
-
-
-
-
+import AddButton from "./components/AddButton/AddButton";
 import Nav from "./components/Nav";
-
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Expense from "./components/Expense";
@@ -14,22 +8,14 @@ import Expense from "./components/Expense";
 function App() {
 	return (
 		<div className="App">
-
-			
-			
-
-
 			<Nav />
 
 			<Header />
-      
+
 			<Hero />
-      <AddButton />
-      	<Expense />
-
-
+			<AddButton />
+			<Expense />
 		</div>
-
 	);
 }
 
