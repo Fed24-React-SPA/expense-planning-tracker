@@ -1,6 +1,6 @@
 import "./App.css";
-import AddButton from "./Components/AddButton/AddButton";
-import NavbarFooter from "./Components/NavbarFooter/NavbarFooter";
+import AddButton from "./components/AddButton/AddButton";
+import NavbarFooter from "./components/NavbarFooter/NavbarFooter";
 
 import Nav from "./components/Nav";
 import Header from "./components/Header/Header";
