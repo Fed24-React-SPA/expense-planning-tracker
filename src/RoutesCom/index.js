@@ -11,8 +11,7 @@ const RoutesCom = () => {
 			<BrowserRouter>
 				<div className="parentnav">
 					<Link className="navstyle" to={"/"}>
-						{" "}
-						Home{" "}
+						Home
 					</Link>
 					<Link className="navstyle" to={"/expense"}>
 						Expense
