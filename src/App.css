@@ -7,10 +7,22 @@
 	--purple-color: #6c40d9;
 	--white-color: #ffffff;
 	--light-pink: #fdc1c1;
+	--padding-big: 2rem;
+	--padding-small: 1rem;
+	--linear-black: rgba(20, 19, 38, 1) 79%;
+	--linear-orange: rgba(227, 130, 60, 1) 100%;
+}
+*,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .App {
 	text-align: center;
+	height: 100vh;
+	background-color: var(--dark-blue-bgcolor);
 }
 
 .App-logo {
@@ -47,3 +59,4 @@
 		transform: rotate(360deg);
 	}
 }
+
