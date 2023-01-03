@@ -1,5 +1,6 @@
 import "./App.css";
 import AddButton from "./Components/AddButton/AddButton";
+import NavbarFooter from "./Components/NavbarFooter/NavbarFooter";
 
 
 
@@ -15,6 +16,10 @@ function App() {
 	return (
 		<div className="App">
 
+		
+		
+
+
 			
 			
 
@@ -26,6 +31,8 @@ function App() {
 			<Hero />
       <AddButton />
       	<Expense />
+        	<NavbarFooter />
+
 
 
 		</div>
