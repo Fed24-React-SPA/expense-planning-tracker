@@ -12,7 +12,12 @@
 	--linear-black: rgba(20, 19, 38, 1) 79%;
 	--linear-orange: rgba(227, 130, 60, 1) 100%;
 }
-
+*,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 .App {
 	text-align: center;
 }

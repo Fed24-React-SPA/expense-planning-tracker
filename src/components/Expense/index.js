@@ -8,7 +8,7 @@ const Expense = () => {
 	const [category, setCategory] = useState("");
 	const [payment, setPayment] = useState("");
 	const [currency, setCurrency] = useState("");
-	// const [income, setIncome] = useState(2000);
+
 	useEffect(() => {
 		const datas = JSON.parse(localStorage.getItem("datas"));
 		if (datas) {
@@ -16,43 +16,27 @@ const Expense = () => {
 		}
 		console.log("local", datas);
 	}, []);
-	useEffect(() => {
-		console.log(datas);
-	}, [datas]);
-
 	const submit = (e) => {
 		e.preventDefault();
 		const nameVal = name.current.value;
 		const amountVal = amount.current.value;
+		// store values into an object
+		const expenseInfo = {
+			name: nameVal,
+			amount: Number(amountVal),
+			currency: currency,
+			category: category,
+			date: new Date().toLocaleString("en-GB").replace(",", ""),
+			payment: payment,
+		};
+		//save into localstorage
+		localStorage.setItem("datas", JSON.stringify([...datas, expenseInfo]));
+		//
+		// store in datas array /// store new value with keeping previous value
+		setDatas([...datas, expenseInfo]);
+		// end of storing in datas array
 
-		// Do i need to add async await for localsorage?
-		localStorage.setItem(
-			"datas",
-			JSON.stringify([
-				...datas,
-				{
-					_id: Math.floor(Math.random() * 1000 + 1),
-					name: nameVal,
-					amount: Number(amountVal),
-					currency: currency,
-					category: category,
-					date: new Date().toLocaleString("en-GB").replace(",", ""),
-					payment: payment,
-				},
-			])
-		);
-		setDatas([
-			...datas,
-			{
-				_id: Math.floor(Math.random() * 1000 + 1),
-				name: nameVal,
-				amount: Number(amountVal),
-				currency: currency,
-				category: category,
-				date: new Date().toLocaleString("en-GB").replace(",", ""),
-				payment: payment,
-			},
-		]);
+		// reset all input
 		setCategory("");
 		setPayment("");
 		setCurrency("");
@@ -63,14 +47,6 @@ const Expense = () => {
 	return (
 		<>
 			<div className="expense-container">
-				<h1 className="main-text">
-					Total Expense :
-					{datas.reduce((acc, obj) => {
-						return acc + obj.amount;
-					}, 0)}
-				</h1>
-				<h1>Expense Component</h1>
-
 				<form className="expense-form" onSubmit={submit}>
 					<input
 						required
@@ -86,11 +62,14 @@ const Expense = () => {
 					/>
 					<select
 						required
-						value={category}
+						defaultValue={"default"}
 						onChange={(e) => {
 							setCategory(e.target.value);
 						}}
 					>
+						<option value="default" disabled hidden>
+							Choose Category..
+						</option>
 						<option value={"Apparels"}>Apparels</option>
 						<option value={"Electronics"}>Electronics</option>
 						<option value={"Investments"}>Investments</option>
@@ -102,21 +81,27 @@ const Expense = () => {
 						<option value={"Food-Groceries"}>Food And Groceries</option>
 					</select>
 					<select
-						value={currency}
+						defaultValue={"default"}
 						required
 						onChange={(e) => {
 							setCurrency(e.target.value);
 						}}
 					>
+						<option value="default" disabled hidden>
+							choose currency ....
+						</option>
 						<option value="SEK">SEK</option>
 					</select>
 					<select
-						value={payment}
 						required
+						defaultValue={"default"}
 						onChange={(e) => {
 							setPayment(e.target.value);
 						}}
 					>
+						<option value="default" disabled hidden>
+							Payement Mothod...
+						</option>
 						<option value="Physical-Cash">Physical Cash</option>
 						<option value="Bank-Card">Bank Card</option>
 					</select>
@@ -139,16 +124,15 @@ const Expense = () => {
 								</div>
 								<div className="right-div">
 									<p>
-										<span>- SEK</span>
-										{data.amount}
+										<span>-</span>
+										<span> {data.amount}</span>
+										<span> {data.currency}</span>
 									</p>
 								</div>
-
-								{/* <p>remaining : {income}</p> */}
 							</div>
 						))
 					) : (
-						<h1>... data is loading</h1>
+						<h1>... expense is loading</h1>
 					)}
 				</div>
 			</div>

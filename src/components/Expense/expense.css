@@ -1,4 +1,7 @@
 .expense-container {
+	padding: 1.25rem 0rem;
+	width: 100%;
+	margin: 0 auto;
 	color: var(--white-color);
 	background: var(--dark-blue-bgcolor);
 	background: linear-gradient(
@@ -9,11 +12,10 @@
 	font-weight: 800;
 }
 .main-text {
-	padding: var(--padding-big);
 	text-align: center;
 }
 .expense-form {
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -30,18 +32,12 @@
 	transition: all 0.65s ease;
 }
 .expense-form button:hover {
-	transform: translateY(4px);
+	transform: translateY(2px);
 	letter-spacing: 4px;
-	background-color: greenyellow;
+	background-color: var(--green-color-secondary);
 	color: black;
 }
-.expense-form input,
-select,
-option {
-	width: 80%;
-	padding: 8px 16px;
-	margin: 0 auto;
-}
+
 /* transaction container */
 
 .transaction-container {
