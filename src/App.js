@@ -1,4 +1,5 @@
 import "./App.css";
+import AddButton from "./Components/AddButton/AddButton";
 
 
 
@@ -14,11 +15,18 @@ function App() {
 	return (
 		<div className="App">
 
+			
+			
+
+
 			<Nav />
 
 			<Header />
+      
 			<Hero />
+      <AddButton />
       	<Expense />
+
 
 		</div>
 

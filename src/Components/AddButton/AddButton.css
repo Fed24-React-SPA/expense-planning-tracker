@@ -1,0 +1,16 @@
+.AddBtn-icon {
+    box-sizing: border-box;
+    background: linear-gradient(99.61deg, #E3823C 14.81%, #E33C3C 89.9%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.87);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 0.5rem;
+    position: absolute;
+    left: 330px;
+    top: 750px;
+}
+    
+   
+   
