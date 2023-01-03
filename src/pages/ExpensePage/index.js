@@ -1,9 +1,14 @@
-import React from 'react'
-import './expensepage.css'
+import React from "react";
+import Expense from "../../components/Expense";
+import Nav from "../../components/Nav";
+import "./expensepage.css";
 const ExpensePage = () => {
-  return (
-    <div>Expense</div>
-  )
-}
+	return (
+		<>
+			<Nav />
+			<Expense />
+		</>
+	);
+};
 
-export default ExpensePage
+export default ExpensePage;

@@ -1,3 +1,9 @@
-div{
-    margin:0;
-    }
+.home-Container {
+	height: 85vh;
+	background: var(--dark-blue-bgcolor);
+	background: linear-gradient(
+		351deg,
+		var(--linear-black),
+		var(--linear-orange)
+	);
+}

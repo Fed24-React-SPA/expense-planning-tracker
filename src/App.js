@@ -1,24 +1,24 @@
+import React from "react";
 import "./App.css";
-import RoutesCom from "./RoutesCom";
-import AddButton from "./components/AddButton/AddButton";
 import NavbarFooter from "./components/NavbarFooter/NavbarFooter";
-import Nav from "./components/Nav";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Expense from "./components/Expense";
+import Home from "./pages/Home";
+import ExpensePage from "./pages/ExpensePage";
+import Statistics from "./pages/Statistics";
+import Profile from "./pages/Profile";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<Nav />
-      <Header />
-      <Hero />
-			<AddButton />
-			<Expense />
-      <RoutesCom />
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/expense" element={<ExpensePage />} />
+				<Route path="/statistics" element={<Statistics />} />
+				<Route path="/profile" element={<Profile />} />
+			</Routes>
 			<NavbarFooter />
-		</div>
+		</BrowserRouter>
 	);
-}
+};
 
 export default App;
