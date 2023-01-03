@@ -1,3 +1,10 @@
-div{
-    margin:0;
-    }
+.profilepage-container {
+	height: 100vh;
+	background: var(--dark-blue-bgcolor);
+	background: linear-gradient(
+		351deg,
+		var(--linear-black),
+		var(--linear-orange)
+	);
+	color: var(--white-color);
+}

@@ -5,8 +5,10 @@ import "./expensepage.css";
 const ExpensePage = () => {
 	return (
 		<>
-			<Nav />
-			<Expense />
+			<div className="expensepage-container">
+				<Nav />
+				<Expense />
+			</div>
 		</>
 	);
 };

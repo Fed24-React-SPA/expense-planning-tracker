@@ -1,8 +1,12 @@
 import React from "react";
-// import Nav from "../../components/Nav";
+import Nav from "../../components/Nav/index";
 import "./profile.css";
 const Profile = () => {
-	return <h1>profile</h1>;
+	return (
+		<div className="profilepage-container">
+			<Nav />
+		</div>
+	);
 };
 
 export default Profile;

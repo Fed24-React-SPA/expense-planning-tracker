@@ -1,5 +1,6 @@
 .expense-container {
-	padding: 3rem 0rem;
+	padding: 1rem 0rem;
+	height: 100vh;
 	width: 100%;
 	margin: 0 auto;
 	color: var(--white-color);
@@ -42,7 +43,7 @@
 
 .transaction-container {
 	padding: 1rem 0;
-	max-height: 250px;
+	max-height: 400px;
 	overflow-y: scroll;
 	transition: all 0.75s ease;
 	width: 65%;

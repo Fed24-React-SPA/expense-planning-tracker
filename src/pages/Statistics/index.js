@@ -1,7 +1,12 @@
 import React from "react";
-
+import "./statistics.css";
+import Nav from "../../components/Nav/index";
 const Statistics = () => {
-	return <div>statistic</div>;
+	return (
+		<div className="statisticspage-container">
+			<Nav />
+		</div>
+	);
 };
 
 export default Statistics;
