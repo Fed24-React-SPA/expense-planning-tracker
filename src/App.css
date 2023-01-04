@@ -22,7 +22,6 @@ body {
 .App {
 	text-align: center;
 	height: 100vh;
-	background-color: var(--dark-blue-bgcolor);
 }
 
 .App-logo {
@@ -59,4 +58,3 @@ body {
 		transform: rotate(360deg);
 	}
 }
-
