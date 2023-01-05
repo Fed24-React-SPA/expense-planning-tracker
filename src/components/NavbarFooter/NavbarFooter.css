@@ -1,0 +1,30 @@
+.navbar-footer__icons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #141326;
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	bottom: 0;
+}
+.faHouse,
+.faCreditCard,
+.faChartSimple,
+.faUser {
+	font-size: 30px;
+	padding-left: 35px;
+	padding-right: 35px;
+	color: white;
+}
+
+.faHouse:hover,
+.faCreditCard:hover,
+.faChartSimple:hover,
+.faUser:hover {
+	color: rgba(227, 181, 60, 1);
+	transition: all 0.2s ease-in-out;
+}
