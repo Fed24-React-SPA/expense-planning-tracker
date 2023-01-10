@@ -1,32 +1,33 @@
-.balanceBar{
-  display: flex;
-  justify-content: center;
+.balanceBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--dark-blue-bgcolor);
+	padding: var(--padding-big);
+	position: sticky;
+	top: 0;
+	border-radius: var(--padding-big);
 }
-.availableName{
-  /* Available Balance */
+.availableName {
+	/* Available Balance */
 
-position: absolute;
-height: 18px;
-top: 138px;
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0.015em;
-color: #E3B53C;
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.015em;
+	color: #e3b53c;
 }
-.balanceNum{
-/* ₹1,05,284 */
+.balanceNum {
+	/* ₹1,05,284 */
 
-position: absolute;
-height: 68px;
-top: 156px;
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 31px;
-letter-spacing: 0.015em;
-color: var(--white-color);
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 31px;
+	letter-spacing: 0.015em;
+	color: var(--white-color);
 }

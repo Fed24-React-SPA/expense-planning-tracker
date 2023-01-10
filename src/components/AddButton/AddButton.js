@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AddButton = () => {
 	return (
 		<div className="AddBtn">
-			<Link to={"/expense"}>
+			<Link to={"/insert"}>
 				<FontAwesomeIcon icon={faPlus} className="AddBtn-icon" />
 			</Link>
 		</div>

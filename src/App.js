@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import NavbarFooter from "./components/NavbarFooter/NavbarFooter";
 import Home from "./pages/Home";
+import Insert from "./pages/Insert";
 import ExpensePage from "./pages/ExpensePage";
 import Statistics from "./pages/Statistics";
 import Profile from "./pages/Profile";
@@ -12,6 +13,7 @@ const App = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/insert" element={<Insert />} />
 				<Route path="/expense" element={<ExpensePage />} />
 				<Route path="/statistics" element={<Statistics />} />
 				<Route path="/profile" element={<Profile />} />

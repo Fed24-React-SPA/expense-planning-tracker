@@ -1,14 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./expense.css";
-import moneyIcon from "../../images/money.png";
-const Expense = () => {
+// import moneyIcon from "../../images/money.png";
+const Expense = (props) => {
 	const name = useRef();
 	const amount = useRef();
 	const [datas, setDatas] = useState([]);
 	const [category, setCategory] = useState("");
 	const [payment, setPayment] = useState("");
 	const [currency, setCurrency] = useState("");
-
+	const { state } = useLocation();
+	const navigate = useNavigate();
+	console.log("newState", { state });
 	useEffect(() => {
 		const datas = JSON.parse(localStorage.getItem("datas"));
 		if (datas) {
@@ -16,12 +19,13 @@ const Expense = () => {
 		}
 		console.log("local", datas);
 	}, []);
+
 	const submit = (e) => {
 		e.preventDefault();
 		const nameVal = name.current.value;
 		const amountVal = amount.current.value;
-		// store values into an object
 		const expenseInfo = {
+			id: Math.floor(Math.random() * 1000 + 1),
 			name: nameVal,
 			amount: Number(amountVal),
 			currency: currency,
@@ -29,34 +33,63 @@ const Expense = () => {
 			date: new Date().toLocaleString("en-GB").replace(",", ""),
 			payment: payment,
 		};
-		//save into localstorage
 		localStorage.setItem("datas", JSON.stringify([...datas, expenseInfo]));
-		//
-		// store in datas array /// store new value with keeping previous value
 		setDatas([...datas, expenseInfo]);
-		// end of storing in datas array
-
-		// reset all input
+		props.chooseMessage([...datas, expenseInfo]);
 		setCategory("");
 		setPayment("");
 		setCurrency("");
 		name.current.value = "";
 		amount.current.value = "";
+		state.name = "";
+		state.input = "";
 		console.log(datas);
+		setTimeout(() => {
+			navigate("/");
+		}, 1000);
 	};
+	// const removeElement = (index) => {
+	// 	// remove from react app with filter method
+	// 	const newData = datas.filter((_ali, i) => i !== index);
+	// 	setDatas(newData);
+	// 	props.chooseMessage(newData);
+
+	// 	// we can use another method to remove from localstorage,but this method also works!
+	// 	localStorage.setItem("datas", JSON.stringify(newData));
+	// 	// remove from localStorage
+	// };
+
 	return (
 		<>
+			{/* <h1>{state.id}</h1>
+			<h1>{state.name}</h1>
+			<h1>{state.input}</h1> */}
 			<div className="expense-container">
+				{/* <h1 className="main-text">
+					Total Expense :
+					{datas.reduce((acc, obj) => {
+						return acc + obj.amount;
+					}, 0)}
+				</h1> */}
+				<h1>Expense Component</h1>
+
 				<form className="expense-form" onSubmit={submit}>
 					<input
 						required
 						type={"text"}
+						value={state.name}
+						// value={state.name !== "" ? state.name : name}
+						// ref={state.name.length !== "" ? state.name : name}
+						// value={state.name !== "" ? state.name : console.log("hi")}
 						ref={name}
 						placeholder={"Add Description"}
 					/>
 					<input
 						required
 						type={"number"}
+						//
+						// value={state.input !== "" ? state.input : null}
+						value={state.input}
 						ref={amount}
 						placeholder={"Expense Amount"}
 					/>
@@ -107,7 +140,7 @@ const Expense = () => {
 					</select>
 					<button>Submit</button>
 				</form>
-				<div className="transaction-container">
+				{/* <div className="transaction-container">
 					<h3>My Transactions</h3>
 					{datas.length > 0 ? (
 						datas.map((data, i) => (
@@ -127,14 +160,25 @@ const Expense = () => {
 										<span>-</span>
 										<span> {data.amount}</span>
 										<span> {data.currency}</span>
+										<button
+											onClick={() => removeElement(i)}
+											style={{
+												color: "red",
+												backgroundColor: "black",
+												padding: "4px 8px",
+												marginLeft: 5,
+											}}
+										>
+											X
+										</button>
 									</p>
 								</div>
 							</div>
 						))
 					) : (
-						<h1>... expense is loading</h1>
+						<h1>... data is loading</h1>
 					)}
-				</div>
+				</div> */}
 			</div>
 		</>
 	);

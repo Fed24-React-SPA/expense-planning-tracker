@@ -1,0 +1,28 @@
+.parent-income-container {
+	padding: var(--padding-big);
+}
+.income-container {
+	width: 400px;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.income-container button {
+	padding: 8px 16px;
+	background-color: var(--orange-color-primary);
+	color: var(--white-color);
+	font-weight: 700;
+	border: none;
+	border-radius: 10px;
+	transition: all 0.75s ease-in-out;
+	letter-spacing: 1px;
+}
+.income-container button:hover {
+	transform: translateY(2px);
+	background-color: var(--green-color-secondary);
+	letter-spacing: 3px;
+	color: var(--dark-blue-bgcolor);
+	font-weight: 900;
+}
