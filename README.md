@@ -1,7 +1,3 @@
-Remain parts : 
-1-Add Income function into project 
-2-Implement style part into this branch...
-3-work on other tabs such as expense and income
 
 ............
 
