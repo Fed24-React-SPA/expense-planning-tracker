@@ -1,10 +1,10 @@
-.home-Container {
-	height: 100vh !important;
+.insertepage-container {
+	height: 100vh;
 	background: var(--dark-blue-bgcolor);
 	background: linear-gradient(
 		351deg,
 		var(--linear-black),
 		var(--linear-orange)
 	);
-	overflow-y: hidden;
+	color: var(--white-color);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Expense from "../../components/Expense";
+import Tab from "../../components/Tab";
 import Nav from "../../components/Nav";
 import "./expensepage.css";
 const ExpensePage = () => {
@@ -7,7 +7,7 @@ const ExpensePage = () => {
 		<>
 			<div className="expensepage-container">
 				<Nav />
-				<Expense />
+				<Tab />
 			</div>
 		</>
 	);
