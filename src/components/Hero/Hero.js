@@ -8,17 +8,16 @@ const Hero = () => {
 		console.log("local", message);
 		let message2 = JSON.parse(localStorage.getItem("income"));
 		console.log("local", message2);
-		if (message) {
-			let sumIncome = message2.reduce((acc, obj) => {
-				return acc + obj.income;
-			}, 0);
-			// console.log("totalexpense", sumIncome);
-			let sumExpense = message.reduce((acc, obj) => {
-				return acc + obj.amount;
-			}, 0);
-			// console.log("totalincome", sumIncome);
-			setTotal(sumIncome - sumExpense);
-		}
+
+		let sumIncome = message2.reduce((acc, obj) => {
+			return acc + obj.income;
+		}, 0);
+		// console.log("totalexpense", sumIncome);
+		let sumExpense = message.reduce((acc, obj) => {
+			return acc + obj.amount;
+		}, 0);
+		// console.log("totalincome", sumIncome);
+		setTotal(sumIncome - sumExpense);
 	}, [total]);
 	return (
 		<div className="balanceBar">

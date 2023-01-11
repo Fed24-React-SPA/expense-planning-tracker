@@ -13,6 +13,8 @@
 	padding: var(--padding-small) 0rem;
 	color: var(--white-color);
 	border-radius: 1.25rem;
+
+
 }
 
 /* inner container */
@@ -54,9 +56,50 @@
 	align-items: center;
 	justify-content: flex-end;
 }
+
+/*  */
+.transaction h3{
+	text-align: center;
+}
+/*  */
 /* end of inner container */
 /* end of transaction container */
+/*  */
+.balanceBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: var(--dark-blue-bgcolor);
+	padding: var(--padding-big);
+	position: sticky;
+	top: 0;
+	border-radius: var(--padding-big);
+}
+.availableName {
+	/* Available Balance */
+	text-align: center;
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.015em;
+	color: #e3b53c;
+}
+.balanceNum {
+	/* ₹1,05,284 */
 
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 31px;
+	letter-spacing: 0.015em;
+	color: var(--white-color);
+}
+
+/*  */
 /* responsive */
 
 @media only screen and (max-width: 768px) {

@@ -48,29 +48,10 @@ const Expense = (props) => {
 			navigate("/");
 		}, 1000);
 	};
-	// const removeElement = (index) => {
-	// 	// remove from react app with filter method
-	// 	const newData = datas.filter((_ali, i) => i !== index);
-	// 	setDatas(newData);
-	// 	props.chooseMessage(newData);
-
-	// 	// we can use another method to remove from localstorage,but this method also works!
-	// 	localStorage.setItem("datas", JSON.stringify(newData));
-	// 	// remove from localStorage
-	// };
 
 	return (
 		<>
-			{/* <h1>{state.id}</h1>
-			<h1>{state.name}</h1>
-			<h1>{state.input}</h1> */}
 			<div className="expense-container">
-				{/* <h1 className="main-text">
-					Total Expense :
-					{datas.reduce((acc, obj) => {
-						return acc + obj.amount;
-					}, 0)}
-				</h1> */}
 				<h1>Expense Component</h1>
 
 				<form className="expense-form" onSubmit={submit}>
@@ -78,9 +59,6 @@ const Expense = (props) => {
 						required
 						type={"text"}
 						value={state.name}
-						// value={state.name !== "" ? state.name : name}
-						// ref={state.name.length !== "" ? state.name : name}
-						// value={state.name !== "" ? state.name : console.log("hi")}
 						ref={name}
 						placeholder={"Add Description"}
 					/>
@@ -140,45 +118,6 @@ const Expense = (props) => {
 					</select>
 					<button>Submit</button>
 				</form>
-				{/* <div className="transaction-container">
-					<h3>My Transactions</h3>
-					{datas.length > 0 ? (
-						datas.map((data, i) => (
-							<div className="inner-container" key={i}>
-								<div className="left-div">
-									<div className="left-div-imgcontainer">
-										<img src={moneyIcon} alt="money" />
-									</div>
-
-									<div className="left-div-content">
-										<p>{data.name}</p>
-										<p>{data.date}</p>
-									</div>
-								</div>
-								<div className="right-div">
-									<p>
-										<span>-</span>
-										<span> {data.amount}</span>
-										<span> {data.currency}</span>
-										<button
-											onClick={() => removeElement(i)}
-											style={{
-												color: "red",
-												backgroundColor: "black",
-												padding: "4px 8px",
-												marginLeft: 5,
-											}}
-										>
-											X
-										</button>
-									</p>
-								</div>
-							</div>
-						))
-					) : (
-						<h1>... data is loading</h1>
-					)}
-				</div> */}
 			</div>
 		</>
 	);
