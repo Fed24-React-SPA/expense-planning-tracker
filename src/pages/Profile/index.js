@@ -3,7 +3,11 @@ import GlassCard from "../../components/GlassCard/GlassCard";
 import Icon from "../../components/Icon/Icon";
 import Nav from "../../components/Nav/index";
 import "./profile.css";
-import moneyIcon from "../../images/money.png";
+import profilePicture from "../../images/profile.png";
+import bankIcon from "../../images/icons/bank.svg"
+import cashIcon from "../../images/icons/cash.svg"
+import debitIcon from "../../images/icons/debit.svg"
+import creditIcon from "../../images/icons/credit.svg"
 
 const Profile = () => {
 	return (
@@ -12,7 +16,7 @@ const Profile = () => {
 		<div className="profilepage-container">
 			<GlassCard>
 				<div className="card-user">
-					<div className="left">
+					<div className="left-wrapper">
 						<p className="title-l">Chandrama Saha</p>
 						<div className="text-wrapper">
 							<p className="title-sm">+91 XXXXX XXXXX</p>
@@ -20,7 +24,8 @@ const Profile = () => {
 						</div> 
 					</div>
 					<div className="right">
-						<div className="circle"><div className="inner-circle"></div></div>
+						
+						<div className="circle"><div className="inner-circle"></div><img src={profilePicture} alt="profile"/></div>
 						</div>
 				</div>
 			</GlassCard>
@@ -29,13 +34,13 @@ const Profile = () => {
 					<p className="title-l">Payment Methods</p>
 					<div className="wrapper-icon">
 						<Icon
-						iconUrl={moneyIcon}
+						iconUrl={bankIcon}
 						altName="Flisan"
 						title="Physical Cash"
 						/>
 											<Icon
-						iconUrl={moneyIcon}
-						altName="Flisan"
+						iconUrl={cashIcon}
+						altName="bank icon"
 						title="Bank Balance"
 						/>
 					</div>
@@ -48,13 +53,13 @@ const Profile = () => {
 					<p className="title-l">Cards</p>
 					<div className="wrapper-icon">
 						<Icon
-						iconUrl={moneyIcon}
-						altName="Flisan"
+						iconUrl={debitIcon}
+						altName="icon for debit"
 						title="Credit Card"
 						/>
 											<Icon
-						iconUrl={moneyIcon}
-						altName="Flisan"
+						iconUrl={creditIcon}
+						altName="icon for credit"
 						title="Debit Card"
 						/>
 					</div>
