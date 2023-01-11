@@ -52,7 +52,7 @@
 	width: 100%;	
 }
 
-.left {
+.left-wrapper {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -66,23 +66,18 @@
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	
 }
 
 .circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 60px;
-	width: 60px;
+	height: 80px;
+	width: 80px;
 	border-radius: 50%;
 	background: white;
-}
 
-.inner-circle {
-	height: 80%;
-	width: 80%;
-	border-radius: 50%;
-	background: black;
 }
 
 .card-payment {
@@ -100,6 +95,5 @@
 	width: 80%;	
 	gap: 12px;
 }
-
 
 
