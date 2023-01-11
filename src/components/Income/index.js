@@ -50,25 +50,6 @@ const Income = (props) => {
 					</select>
 					<button onClick={handleClick}>Insert Template</button>
 				</div>
-				{/* {incomeData.length > 0 ? (
-					incomeData.map((data, i) => (
-						<div key={i}>
-							<h3>{data.income}</h3>
-						</div>
-					))
-				) : (
-					<h4>...income is loading</h4>
-				)} */}
-				{/* {incomeData.length > 0 ? (
-					<h5>
-						Total Income :
-						{incomeData.reduce((acc, obj) => {
-							return acc + obj.income;
-						}, 0)}
-					</h5>
-				) : (
-					<h4>...income is loading</h4>
-				)} */}
 			</section>
 		</>
 	);
