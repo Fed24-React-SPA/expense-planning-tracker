@@ -52,8 +52,6 @@ const Expense = (props) => {
 	return (
 		<>
 			<div className="expense-container">
-				<h1>Expense Component</h1>
-
 				<form className="expense-form" onSubmit={submit}>
 					<input
 						required

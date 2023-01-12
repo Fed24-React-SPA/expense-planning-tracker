@@ -36,7 +36,6 @@ const Income = (props) => {
 	return (
 		<>
 			<section className="parent-income-container">
-				<h1>income component</h1>
 				<div className="income-container">
 					<input type="number" placeholder="Amount of income" ref={income} />
 					<select
