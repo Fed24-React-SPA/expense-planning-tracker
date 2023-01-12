@@ -7,4 +7,135 @@
 		var(--linear-orange)
 	);
 	color: var(--white-color);
+	font-family: 'Syne', sans-serif;
+}
+
+.statistics-container {
+	display: flex;
+	justify-content: center;
+	padding: 8%;
+}
+
+.statistics-container__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.15rem;
+	text-align: left;
+}
+
+.statitics-container__options {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	font-size: 14px;
+	padding-bottom: 5%;
+}
+
+.statitics-container__options-stat:hover {
+	color: #E3B53C;
+	filter: blur(0.5px);
+}
+
+.statitics-container__options-saveplan:hover {
+	color: #E3B53C;
+	filter: blur(0.5px);
+}
+
+.saving-plan__container {
+	box-sizing: border-box;
+	width: 340px;
+	height: 380px;
+	display: block;
+	margin: 0px auto;
+	background: rgba(255, 255, 255, 0.122);
+	background-blend-mode: overlay;
+	border: 1px solid rgba(255, 255, 255, 0.035);
+	border-radius: 30px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.saving-plan__form {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: var(--padding-small);
+}
+
+.saving-plan__new-plan {
+	position: absolute;
+	width: 268px;
+	height: 48px;
+	left: 27px;
+	top: 33px;
+}
+
+.new-plan {
+	color: #E3B53C;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-bottom: 2%;
+	letter-spacing: 0.12rem;
+}
+
+.text-plan {
+	font-weight: lighter;
+	font-size: 12px;
+	letter-spacing: 0.08rem;
+	padding-left: 9%;
+}
+
+.saving-plan__input-income {
+	background: rgba(25, 23, 61, 0.5);
+	background-blend-mode: overlay;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 15px;
+	position: absolute;
+	width: 310px;
+	height: 44px;
+	left: 15px;
+	top: 110px;
+}
+
+.saving-plan__input-costs {
+	background: rgba(25, 23, 61, 0.5);
+	background-blend-mode: overlay;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 15px;
+	position: absolute;
+	width: 310px;
+	height: 44px;
+	left: 15px;
+	top: 173px;
+}
+
+::placeholder {
+	font-size: 12px;
+	letter-spacing: 0.12rem;
+	padding-left: 5%;
+}
+
+.btnSave {
+	position: absolute;
+	width: 127px;
+	height: 44px;
+	top: 300px;	
+	background: linear-gradient(99.61deg, #e3823c 14.81%, #e33c3c 89.9%);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 15px;
+	color: rgba(255, 255, 255, 0.87);	
+}
+
+@media (min-width: 1024px) {
+	.statistics-container {
+		padding: 2%;
+	}
+	
+	.statitics-container__options {
+		padding-bottom: 2%;
+		justify-content: space-evenly;
+	}
 }
