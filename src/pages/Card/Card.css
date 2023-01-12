@@ -1,0 +1,13 @@
+.cardpage-container{
+	/* height: 100vh; */
+	background: var(--dark-blue-bgcolor);
+	background: linear-gradient(
+		351deg,
+		var(--linear-black),
+		var(--linear-orange)
+	);
+	color: var(--white-color);
+	display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
