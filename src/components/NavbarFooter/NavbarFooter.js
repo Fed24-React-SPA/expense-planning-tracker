@@ -19,7 +19,7 @@ const NavbarFooter = () => {
 			{/* <Link to={"/expense"}>
 				<FontAwesomeIcon icon={faCreditCard} className="faCreditCard" />
 			</Link> */}
-			<Link to={"/insert"}>
+			<Link to={"/card"}>
 				<FontAwesomeIcon icon={faCreditCard} className="faCreditCard" />
 			</Link>
 			<Link to={"/statistics"}>
