@@ -61,7 +61,6 @@ const Tab = () => {
 
 	return (
 		<div className="simple-tabs">
-			<h6>Tab component(children : expense,income)</h6>
 			{/* data comes from child into parent */}
 			{console.log("expense", message)}
 			{console.log("income", message2)}
