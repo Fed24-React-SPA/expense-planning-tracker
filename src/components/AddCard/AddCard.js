@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AddCard.css";
 import SwiperCard from "../Card/Card";
-import Hero from "../Hero/Hero";
+// import Hero from "../Hero/Hero";
 
 
 
