@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./expense.css";
-// import moneyIcon from "../../images/money.png";
 const Expense = (props) => {
 	const name = useRef();
 	const amount = useRef();
@@ -63,8 +62,6 @@ const Expense = (props) => {
 					<input
 						required
 						type={"number"}
-						//
-						// value={state.input !== "" ? state.input : null}
 						value={state.input}
 						ref={amount}
 						placeholder={"Expense Amount"}
